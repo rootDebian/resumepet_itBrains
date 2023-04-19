@@ -189,6 +189,66 @@ router.get('/education', function (req, res) {
   })
 })
 
+router.get('/work', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('work', {
+    layout: 'big',
+    page: {
+      title: 'Resume | Education',
+    },
+
+    header,
+
+    main: {
+      works: [
+        {
+          position: 'Junior Fullstack Developer',
+          company: {
+            name: 'IT-Brains',
+            url: 'https://it-brains.com.ua',
+          },
+          duration: {
+            from: '10.10.2010',
+            to: null,
+          },
+          projectAmount: 3,
+          projects: [
+            {
+              name: 'Resume',
+              url: 'https://google.com',
+              about:
+                'Airbnb competitor. High-load aplication for searching apartments',
+              stack: [
+                {
+                  name: 'React.js',
+                },
+                {
+                  name: 'HTML / CSS',
+                },
+                {
+                  name: 'Node.js',
+                },
+              ],
+              stackAmount: 7,
+              awards: [
+                {
+                  name: 'BGLorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, unde adipisci.',
+                },
+                {
+                  name: 'SEOLorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, unde adipisci.',
+                },
+              ],
+              awardAmount: 9,
+            },
+          ],
+        },
+      ],
+    },
+
+    footer,
+  })
+})
+
 // ================================================================
 
 // Підключаємо роутер до бек-енду
