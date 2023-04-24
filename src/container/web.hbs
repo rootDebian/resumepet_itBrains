@@ -1,0 +1,45 @@
+<main>
+    <h1>Technology stack:</h1>
+    {{#with web}}
+    <div>
+        <ul>
+            {{#each languages}}
+            <li>
+                {{name}}, version {{version}}. <br>
+                <b>About:</b> <em>{{description}}</em> <br>
+                {{#each elements}}
+                <b>Tag: {{name}} - {{description}} <br></b>
+                {{#each attributes}}
+                <div>
+                    Attribute: <b>{{name}}</b> - <em>{{description}}</em>
+                </div>
+                {{/each}}
+                {{/each}}
+
+                <div>
+                    {{#each properties}}
+                    Properties: <b>{{name}}</b> - <em>{{description}}</em> <br>
+                    <div>
+                        {{#each values}}
+                        Value: <b>{{value}}</b> - <em>{{description}}</em> <br>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+                <div>
+                    {{#each functions}}
+                    Function: <b>{{name}}</b> - <em>{{description}}</em>
+                    <div>
+                        {{#each parameters}}
+                        Parameters: <b>{{name}}, type: {{type}} </b> - <em>{{description}}</em> <br>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+                <hr>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/with}}
+</main>
