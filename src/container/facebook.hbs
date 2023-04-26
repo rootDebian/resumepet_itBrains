@@ -1,0 +1,49 @@
+<main>
+    <h1>Facebook:</h1>
+    <div>
+        <ul>
+            <h2>Users:</h2>
+            {{#each users}}
+            <li>
+                <b><u>User:</u> id: {{id}}, name: {{name}}, gender: {{gender}}, age: {{age}}</b>
+                <ul>
+                    <h2>Friends:</h2>
+                    {{#each friends}}
+                    <li>
+                        <em>User:</em> id: {{id}}, name: {{name}}, gender: {{gender}}, age: {{age}}
+                        <ul>
+                            <h4>Mutual friends</h4>
+                            <li>User id: {{id}}, name: {{name}}, gender: {{gender}}, age: {{age}}</li>
+                        </ul>
+                    </li> <br>
+                    {{#each groups}}
+                    <li>
+                        Group: id: {{id}}, name: {{name}}, description: {{description}}
+                        {{#each members}}
+                        <ul>
+                            <li>id: {{id}}, name: {{name}}, gender: {{gender}}, age: {{age}}</li>
+                        </ul>
+                        {{/each}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/each}}
+        </ul>
+        </li>
+        <div>
+            <ul>
+                {{#each groups}}
+                <li>
+                    Group: id: {{id}}, name: {{name}}, description: {{description}}
+                    {{#each members}}
+                    <ul>
+                        <li>id: {{id}}, name: {{name}}, gender: {{gender}}, age: {{age}}</li>
+                    </ul>
+                    {{/each}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/each}}
+    </div>
+</main>
