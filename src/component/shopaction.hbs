@@ -1,0 +1,12 @@
+<section class="mt-5 text-bg-success text-center">
+    {{#with service}}
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    {{#each buttons}}
+    <div class="pb-2">
+        <a href="{{link}}" class="btn btn-primary">{{text}}</a>
+    </div>
+    {{/each}}
+    {{/with}}
+
+</section>
