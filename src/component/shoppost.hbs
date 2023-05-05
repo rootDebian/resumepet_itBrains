@@ -1,0 +1,12 @@
+<div class="card text-bg-dark mt-3">
+    <h6 class="card-header">
+        {{title}}
+        {{#if isTop}}
+        <span class="badge text-bg-danger">TOP</span>
+        {{/if}}
+        {{#if idNew}}
+        <span class="badge text-bg-success">NEW!</span>
+        {{/if}}
+    </h6>
+    <div class="card-body">{{description}}</div>
+</div>

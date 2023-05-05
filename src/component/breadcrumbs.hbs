@@ -1,0 +1,13 @@
+<section class="mt-5 ms-4">
+    <ol class="breadcrumb">
+        {{#each breadcrumb}}
+        <li class="breadcrumb-item">
+            {{#if url}}
+            <a href="{{url}}">{{name}}</a>
+            {{else}}
+            <a href="#" class="nav-link disabled">{{name}}</a>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ol>
+</section>
