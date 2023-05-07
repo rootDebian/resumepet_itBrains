@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="row align-items-center">
+        <div class="col-4">
+            <p>{{number}}</p>
+            <h6>{{status}}</h6>
+        </div>
+        <div class="col-2">
+            <p>{{amount.title}}</p>
+            <h5>{{amount.value}}</h5>
+        </div>
+        <div class="col-4">
+            {{#each images}}
+            <img src="{{this}}" alt="" class="rounded my-2">
+            {{/each}}
+        </div>
+        <div class="col-2 pe-1">
+            {{#with button}}
+            <a href="{{link}}" class="btn {{#if isPrimary}}btn-primary{{/if}}">{{text}}</a>
+            {{/with}}
+        </div>
+    </div>
+</div>
