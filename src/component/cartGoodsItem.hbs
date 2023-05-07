@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="row align-items-center">
+        <img class="col-2" src="{{image}}" alt="">
+        <div class="col-4">
+            <h5>{{name}}</h5>
+            <p>{{description}}</p>
+        </div>
+        <div class="col-2">
+            <p>{{price.title}}</p>
+            <h5>{{price.value}}</h5>
+        </div>
+        <div class="col-2">
+            <p>{{amount}}</p>
+        </div>
+        <div class="col-2">
+            {{#each buttons}}
+            <a href="" class=" mt-2 btn {{#if isPrimary}}btn-primary{{/if}} {{#if isDanger}}btn-outline-danger{{/if}}">{{text}}</a>
+            {{/each}}
+        </div>
+    </div>
+</div>
