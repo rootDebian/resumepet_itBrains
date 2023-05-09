@@ -1,13 +1,13 @@
-<section class="mt-5 ms-4">
-    <ol class="breadcrumb">
-        {{#each breadcrumb}}
-        <li class="breadcrumb-item">
+<div class="mt-5 ms-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            {{#each breadcrumb}}
             {{#if url}}
-            <a href="{{url}}">{{name}}</a>
+            <li class="breadcrumb-item"><a href="{{url}}">{{name}}</a></li>
             {{else}}
-            <a href="#" class="nav-link disabled">{{name}}</a>
+            <li class="breadcrumb-item active">{{name}}</li>
             {{/if}}
-        </li>
-        {{/each}}
-    </ol>
-</section>
+            {{/each}}
+        </ol>
+    </nav>
+</div>
