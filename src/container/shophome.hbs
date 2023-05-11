@@ -1,20 +1,4 @@
 <main>
-    <div class="card mt-4">
-        <div class="card-body">
-            {{#with navigation}}
-            <div class="nav">
-                {{#each links}}
-                <div class="nav-item">
-                    <a href="{{href}}" class="nav-link active">{{text}}</a>
-                </div>
-                {{/each}}
-                <div class="nav-item">
-                    <a href="#" class="nav-link disabled">Disabled</a>
-                </div>
-            </div>
-            {{/with}}
-        </div>
-    </div>
     <section class="mt-5">
         {{#with newsBlock}}
         <h1 class="text-center">{{title}}</h1>
