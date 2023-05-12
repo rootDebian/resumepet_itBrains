@@ -42,7 +42,7 @@ router.get('/', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('index', {
-    layout: 'Index',
+    layout: 'index',
 
     user: {
       name: 'Oleksii',
