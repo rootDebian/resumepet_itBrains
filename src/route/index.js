@@ -41,7 +41,118 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('index', {
+    layout: 'index',
+
+    user: {
+      name: 'Oleksii',
+      surname: 'Kryvenkov',
+    },
+
+    project: {
+      title: 'Resume project',
+    },
+
+    pages: {
+      title: 'Список сторінок',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quasi?',
+      links: [
+        {
+          name: 'Shophome',
+          link: 'shophome',
+        },
+        {
+          name: 'Shopproduct',
+          link: 'shopproduct',
+        },
+        {
+          name: 'Shopnews',
+          link: 'shopnews',
+        },
+        {
+          name: 'Shoporder',
+          link: 'shoporder',
+        },
+        {
+          name: 'Shopcart',
+          link: 'shopcart',
+        },
+        {
+          name: 'Shopprofile',
+          link: 'shopprofile',
+        },
+        {
+          name: 'Shopcatalog',
+          link: 'shopcatalog',
+        },
+        {
+          name: 'Shopreview',
+          link: 'shopreview',
+        },
+        {
+          name: 'Summary',
+          link: 'summary',
+        },
+        {
+          name: 'Skills',
+          link: 'skills',
+        },
+        {
+          name: 'Education',
+          link: 'education',
+        },
+        {
+          name: 'Work',
+          link: 'work',
+        },
+        {
+          name: 'Person',
+          link: 'person',
+        },
+        {
+          name: 'Bio',
+          link: 'bio',
+        },
+        {
+          name: 'Program',
+          link: 'program',
+        },
+        {
+          name: 'Web',
+          link: 'web',
+        },
+        {
+          name: 'Js',
+          link: 'js',
+        },
+        {
+          name: 'Car',
+          link: 'car',
+        },
+        {
+          name: 'Macbook',
+          link: 'mac',
+        },
+        {
+          name: 'Facebook',
+          link: 'facebook',
+        },
+        {
+          name: 'Task21',
+          link: 'task21',
+        },
+        {
+          name: 'Task22',
+          link: 'task22',
+        },
+        {
+          name: 'Task31',
+          link: 'task31',
+        },
+      ],
+    },
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 

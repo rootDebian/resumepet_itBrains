@@ -1,4 +1,20 @@
-h1 {
-    color: red;
-    background: black;
-}
+html {
+    max-width: 768px;
+  }
+  
+  body {
+    /* margin: 32px; */
+    background: #fff;
+  }
+  
+  main,
+  header,
+  footer,
+  nav {
+    /* margin: 32px; */
+  }
+  
+  section {
+    /* padding: 16px; */
+  }
+  
